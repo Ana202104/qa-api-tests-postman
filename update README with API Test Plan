@@ -1,0 +1,39 @@
+# qa-api-tests-postman# API Test Project – Postman
+
+This repository demonstrates a **practical API testing project** using **Postman**.  
+It showcases my ability to design, execute, and document REST API tests following QA best practices.
+
+---
+
+## 🎯 Objective
+- Validate successful responses for valid requests  
+- Ensure proper error handling for invalid requests  
+- Keep tests organized and reproducible
+
+## 📑 Scope (JSONPlaceholder)
+Base URL: `{{baseUrl}}` → `https://jsonplaceholder.typicode.com`
+
+Covered endpoints:
+- `GET /users` → expect 200 and non-empty array
+- `GET /users/{{userId}}` → expect 200 and valid user object
+- `POST /users` → expect 201 and returned id
+- `PUT /users/{{userId}}` → expect 200 and updated fields
+- `DELETE /users/{{userId}}` → expect 200
+
+## 🛠 Tools
+- **Postman** (collection & environment)  
+- **Variables** (`baseUrl`, `userId`) within an environment file
+
+## 🧪 How to Run (Postman UI)
+1. Import `API-Tests-Collection.json`  
+2. Import `API-Environment.json`  
+3. Selecione o environment **Sample-Env**  
+4. Clique em **Run** (Collection Runner) para executar tudo
+
+## 📂 Files in this repo
+- `API-Tests-Collection.json` → All requests + basic tests  
+- `API-Environment.json` → Variables (`baseUrl`, `userId`)  
+- `API-Test-Plan.md` → Scope and approach
+
+## 💡 Skills Demonstrated
+API test design • REST validation • Clear documentation • Attention to detail
